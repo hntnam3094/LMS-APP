@@ -1,12 +1,12 @@
 ## LMS APP - TECHNOLOGY
-- PHP 8.2
-- LARAVEL 11
-- LARAVEL BREEZE
-- LARAVEL INERTIA
-- REACT INERTIA 
-- TAILWIND CSS
-- QUILL REACT
-- GITHUB
+    - PHP 8.2
+    - LARAVEL 11
+    - LARAVEL BREEZE
+    - LARAVEL INERTIA
+    - REACT INERTIA 
+    - TAILWIND CSS
+    - QUILL REACT
+    - GITHUB
 
 ## Diagrams - Database
 https://drive.google.com/file/d/1E0POxJMokcLnfhasc3CnNSjomL0fEPod/view?usp=sharing
