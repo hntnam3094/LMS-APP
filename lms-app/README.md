@@ -47,6 +47,8 @@ connect database:
 
 import: lms_20240623 in sql/lms_20240623
 
+run: composer install
+
 run: npm install
 
 run: npm run dev
