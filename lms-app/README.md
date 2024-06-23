@@ -42,10 +42,12 @@ connect database:
     - port: 3311
 
     - user: root
-    
+
     - host: lms1234
 
 import: lms_20240623 in sql/lms_20240623
+
+run: npm install
 
 run: npm run dev
 
