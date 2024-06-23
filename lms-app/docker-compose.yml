@@ -1,0 +1,41 @@
+version: '3.4'
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - database
+    networks:
+      - lms-network
+
+  webserver:
+    image: nginx:1.17-alpine
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    networks:
+      - lms-network
+
+  database:
+    image: mysql:5.7
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: lms1234
+      MYSQL_DATABASE: lms
+      MYSQL_USER: lms
+      MYSQL_PASSWORD: lms1234
+    ports:
+      - "3311:3306"
+    networks:
+      - lms-network
+
+networks:
+  lms-network:
+    driver: bridge
