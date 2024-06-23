@@ -8,11 +8,14 @@
 - QUILL REACT
 - GITHUB
 
+## Diagrams - Database
+https://drive.google.com/file/d/1E0POxJMokcLnfhasc3CnNSjomL0fEPod/view?usp=sharing
+
 ## LMS APP - USER PART
 
 This is a course management app and in each course there will be many lessons
 
-When a user registers for a course at the center, an account will be created, and this account will save the student's information including name, phone, email.\
+When a user registers for a course at the center, an account will be created, and this account will save the student's information including name, phone, email.
 
 After registering an account, users will be added to the courses available at the center
 
@@ -25,3 +28,4 @@ In courses and lessons, users will see the course content and can download cours
 Here instructors or admins can create courses and lessons, lessons will be added in table format and documents can be attached.
 
 After adding, the admin or instructor can preview the courses and lessons by clicking on details
+
