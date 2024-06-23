@@ -29,3 +29,18 @@ Here instructors or admins can create courses and lessons, lessons will be added
 
 After adding, the admin or instructor can preview the courses and lessons by clicking on details
 
+## RUN SOURCE
+
+run: cp .env.exsample .env
+run: docker compose up -d
+connect database: 
+    - host: localhost
+    - port: 3311
+    - user: root
+    - host: lms1234
+
+import: lms_20240623 in sql/lms_20240623
+
+run: npm run dev
+
+access host: localhost:8000
